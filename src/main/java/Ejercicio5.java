@@ -1,7 +1,8 @@
+import java.util.Arrays;
+
 public class Ejercicio5 {
 
     public Personajes personajes;
-    Personaje[] out = personajes.obtenerTodos();
 
     public Ejercicio5() {
         personajes = new Personajes(ObtenerPersonajesRequest.Companion.get());
@@ -11,20 +12,28 @@ public class Ejercicio5 {
     //  Personajes que tienen imagen asociada.
 
 
-    public Personajes[] TieneImagen(){
-        Personaje[] pers = new Personaje[out.length];
+    public Personaje[] TieneImagen(){
+        Personaje[] out = personajes.obtenerTodos();
 
         int i = 0;
 
-        for(Personaje personaje : out){
-            if()
-
-
-
+        for(i=0; i < out.length; i++){
+            if(out[i].getImage() != null){
+                out[i]=out[i];
+            }
         }
 
+        Personaje[] out2 = new Personaje[0];
+        for(int a=0; a < out.length;a++){
+            if(out[i] != null){
+                out2[a]=out[a];
+            }
+        }
 
+        return out2;
     }
+
+
 
 
 
