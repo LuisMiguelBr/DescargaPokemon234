@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class PersonajeTest {
@@ -12,6 +13,9 @@ public class PersonajeTest {
         // tip: ej.personajes.obtenerTodos()[0].getImage()
         // TODO comprueba que tu función devuelve el número correcto de elementos
         // tip: es 25
+        int resultadoEsperado = 25;
+        int resultadoActual = ej.TieneImagen();
+        Assertions.assertArrayEquals(resultadoActual,resultadoEsperado);
 
     }
 
