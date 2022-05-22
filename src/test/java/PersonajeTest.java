@@ -15,7 +15,7 @@ public class PersonajeTest {
         // tip: es 25
         int resultadoEsperado = 25;
         int resultadoActual = ej.TieneImagen();
-        Assertions.assertArrayEquals(resultadoActual,resultadoEsperado);
+        Assertions.assertEquals(resultadoActual,resultadoEsperado);
 
     }
 
