@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
 public class PersonajeTest {
@@ -22,6 +21,8 @@ public class PersonajeTest {
         // TODO Comprueba que la función: obtenerPotters()
         //  nos devuelve una lista de 6 elementos
         // tip: ej.personajes.obtenerPotters()
+        Personaje[] resultadoactual=ej.personajes.obtenerPotters();
+
     }
 
 

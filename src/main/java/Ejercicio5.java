@@ -11,8 +11,8 @@ public class Ejercicio5 {
     // TODO Haz una función que te devuelva un array compuesto por:
     //  Personajes que tienen imagen asociada.
 
-
-    public Personaje[] TieneImagen(){
+    //Imagen
+    public int TieneImagen(){
         Personaje[] out = personajes.obtenerTodos();
 
         int i = 0;
@@ -30,9 +30,8 @@ public class Ejercicio5 {
             }
         }
 
-        return out2;
+        return i;
     }
-
 
 
 
