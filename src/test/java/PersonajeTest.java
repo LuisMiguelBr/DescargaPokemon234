@@ -58,7 +58,9 @@ public class PersonajeTest {
         // TODO Crea una función que reciba una letra (char) y cuente todos personajes tienen esa letra en su nombre
         //
         // TODO comprueba que tu función devuelve el número correcto de elementos
-
+        int resultadoactual=ej.EncontrarLetra('H');
+        int resultadoEsperado=116;
+        Assertions.assertEquals(resultadoactual,resultadoEsperado);
     }
 
     @Test

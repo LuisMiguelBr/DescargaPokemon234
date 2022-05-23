@@ -13,6 +13,7 @@ public class Ejercicio5 {
         System.out.println("Potters "+ej1.Potters());
         System.out.println("Vivos "+ej1.StaffVivo());
         System.out.println("Muertos "+ej1.StaffMuerto());
+        System.out.println("Letra "+ej1.EncontrarLetra('H'));
     }
 
 
@@ -83,7 +84,7 @@ public class Ejercicio5 {
         for(i=0;i< out.length;i++){
             char[] array = out[i].getName().toCharArray();
             for(int a=0; a < array.length;a++){
-                if(array[a] == letra){
+                if(Character.toLowerCase(array[a]) == Character.toLowerCase(letra)){
                     cont++;
                 }
             }
