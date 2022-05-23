@@ -76,6 +76,23 @@ public class Ejercicio5 {
         return cont;
     }
 
+    public int EncontrarLetra(char letra){
+        Personaje[] out = personajes.obtenerTodos();
+        int i=0;
+        int cont=0;
+        for(i=0;i< out.length;i++){
+            char[] array = out[i].getName().toCharArray();
+            for(int a=0; a < array.length;a++){
+                if(array[a] == letra){
+                    cont++;
+                }
+            }
+
+        }
+
+        return cont;
+    }
+
 
 
 }
