@@ -9,9 +9,10 @@ public class Ejercicio5 {
 
     public static void main(String[] args) {
         Ejercicio5 ej1 = new Ejercicio5();
-        System.out.println(ej1.TieneImagen());
-        System.out.println(ej1.Potters());
-        System.out.println(ej1.StaffVivo());
+        System.out.println("Imagen "+ej1.TieneImagen());
+        System.out.println("Potters "+ej1.Potters());
+        System.out.println("Vivos "+ej1.StaffVivo());
+        System.out.println("Muertos "+ej1.StaffMuerto());
     }
 
 
@@ -36,6 +37,7 @@ public class Ejercicio5 {
         return a;
     }
 
+    //Potters
     public int Potters(){
         Personaje[] out = personajes.obtenerPotters();
         int i=0;
@@ -46,6 +48,7 @@ public class Ejercicio5 {
         return i;
     }
 
+    //Staff Vivo
     public int StaffVivo(){
         Personaje[] out = personajes.obtenerTodos();
         int i=0;
@@ -59,8 +62,19 @@ public class Ejercicio5 {
         return cont;
     }
 
+    //Staff Muerto
+    public int StaffMuerto(){
+        Personaje[] out = personajes.obtenerTodos();
+        int i=0;
+        int cont=0;
+        for(i=0;i< out.length;i++){
+            if(!out[i].getHogwartsStaff() && !out[i].getAlive()){
+                cont++;
+            }
+        }
 
-
+        return cont;
+    }
 
 
 

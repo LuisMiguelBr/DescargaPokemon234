@@ -37,7 +37,9 @@ public class PersonajeTest {
         // TODO Crea una función que cuente a todos los personajes que forman parte del staff de Howarts y que están vivos
         //
         // TODO comprueba que tu función devuelve el número correcto de elementos
-
+        int resultadoactual=ej.StaffVivo();
+        int resultadoEsperado=17;
+        Assertions.assertEquals(resultadoactual,resultadoEsperado);
     }
 
     @Test
@@ -53,7 +55,9 @@ public class PersonajeTest {
         // TODO Crea una función que reciba una letra (char) y cuente todos personajes tienen esa letra en su nombre
         //
         // TODO comprueba que tu función devuelve el número correcto de elementos
-
+        int resultadoactual=ej.StaffMuerto();
+        int resultadoEsperado=115;
+        Assertions.assertEquals(resultadoactual,resultadoEsperado);
     }
 
     @Test
