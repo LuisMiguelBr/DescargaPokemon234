@@ -25,7 +25,9 @@ public class PersonajeTest {
         // TODO Comprueba que la función: obtenerPotters()
         //  nos devuelve una lista de 6 elementos
         // tip: ej.personajes.obtenerPotters()
-        Personaje[] resultadoactual=ej.personajes.obtenerPotters();
+        int resultadoactual=ej.Potters();
+        int resultadoEsperado=6;
+        Assertions.assertEquals(resultadoactual,resultadoEsperado);
 
     }
 
