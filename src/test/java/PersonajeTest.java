@@ -69,7 +69,9 @@ public class PersonajeTest {
         //  en su nombre y están vivos
         //
         // TODO comprueba que tu función devuelve el número correcto de elementos
-
+        int resultadoactual=ej.StringYVivo("Harry");
+        int resultadoEsperado=1;
+        Assertions.assertEquals(resultadoactual,resultadoEsperado);
     }
 
     @Test

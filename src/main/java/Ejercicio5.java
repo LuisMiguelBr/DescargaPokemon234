@@ -14,6 +14,7 @@ public class Ejercicio5 {
         System.out.println("Vivos "+ej1.StaffVivo());
         System.out.println("Muertos "+ej1.StaffMuerto());
         System.out.println("Letra "+ej1.EncontrarLetra('H'));
+        System.out.println("Coincide y esta vivo "+ ej1.StringYVivo("Harry"));
     }
 
 
@@ -95,5 +96,16 @@ public class Ejercicio5 {
     }
 
 
-
+    public int StringYVivo(String nombre){
+        Personaje[] out = personajes.obtenerTodos();
+        int i=0;
+        int cont=0;
+        for(i=0; i < out.length; i++){
+            if (out[i].getName().contains(nombre) && out[i].getAlive()){
+                cont++;
+                System.out.println(out[i]);
+            }
+        }
+        return cont;
+    }
 }
