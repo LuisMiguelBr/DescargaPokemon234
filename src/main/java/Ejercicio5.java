@@ -120,6 +120,11 @@ public class Ejercicio5 {
                 System.out.println(out[i]);
             }
         }
+        i=0;
+        /*for(Personaje personajes: personajes.obtenerTodos()){
+            out[i]=personajes;
+
+        }*/
         return cont;
     }
 }
