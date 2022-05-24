@@ -15,6 +15,7 @@ public class Ejercicio5 {
         System.out.println("Muertos "+ej1.StaffMuerto());
         System.out.println("Letra "+ej1.EncontrarLetra('H'));
         System.out.println("Coincide y esta vivo "+ ej1.StringYVivo("Harry"));
+        System.out.println("Mismo nombre " + ej1.ActorExacto("Daniel Radcliffe"));
     }
 
 
@@ -102,6 +103,19 @@ public class Ejercicio5 {
         int cont=0;
         for(i=0; i < out.length; i++){
             if (out[i].getName().contains(nombre) && out[i].getAlive()){
+                cont++;
+                System.out.println(out[i]);
+            }
+        }
+        return cont;
+    }
+
+    public int ActorExacto(String actor){
+        Personaje[] out = personajes.obtenerTodos();
+        int i = 0;
+        int cont=0;
+        for (i = 0; i < out.length; i++){
+            if(out[i].getActor().contains(actor)){
                 cont++;
                 System.out.println(out[i]);
             }
