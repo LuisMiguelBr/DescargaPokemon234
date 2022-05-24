@@ -80,6 +80,9 @@ public class PersonajeTest {
         //  exactamente como el string recibido
 
         // TODO comprueba que tu función devuelve el número correcto de elementos
+        int resultadoactual=ej.ActorExacto("Daniel Radcliffe");
+        int resultadoEsperado=1;
+        Assertions.assertEquals(resultadoactual,resultadoEsperado);
     }
 
 
